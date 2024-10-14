@@ -1,0 +1,67 @@
+:root {
+  --Very-Dark-Gray: #333;
+  --Dark-Gray: #666;
+  --heavy: 700;
+  --light: 300;
+  --midheavy: 500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--Very-Dark-Gray);
+}
+
+p, input {
+  font-size: 18px;
+  color: var(--Dark-Gray);
+}
+
+h2 {
+  font-weight: 700 !important; /* Ensure this is the correct font weight */ 
+  font-size: x-large !important; /* Ensure this is the correct font size */ 
+}
+
+.light {
+  font-weight: var(--light);
+}
+
+.midheavy {
+  font-weight: var(--midheavy);
+}
+
+.heavy {
+  font-weight: var(--heavy);
+}
+
+#information div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75%;
+  width: 1px;
+  background-color: var(--Dark-Gray);
+}
+
+body {
+  margin: 0;
+  color: var(--Very-Dark-Gray);
+}
+#information {
+  position: relative; /* Ensure the container is positioned relative */
+}
+
+#information div {
+  position: relative; /* Ensure the child divs are positioned relative */
+  padding-left: 20px; /* Add padding to make space for the line */
+}
+@media (min-width : 768px) {
+  .neg{
+    margin-bottom: -50px !important;
+  }
+  
+}
+
+
